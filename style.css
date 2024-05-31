@@ -1,0 +1,265 @@
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    width: 100%;
+    background: url('D:/SHANTANU/Portfolio website/images/heroimage (2).jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* text css above hero image */
+.hero_title {
+    font-size: 4.5rem;
+    color: antiquewhite;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the height as needed */
+    border-radius: 25px;
+}
+
+.text-justify {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* services section css */
+/* services section css */
+.servicesText.card {
+    height: 400px;
+    cursor: pointer;
+    text-align: justify;
+}
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    border: 20px;
+}
+.card-title {
+    text-align: center;
+}
+.card-text {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card:hover .servicesIcon {
+    color: gold;
+}
+.servicesText:hover {
+    border: 2px solid gold;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+    border-bottom:2px solid gold;
+}
+.navbarScroll.navbarDark .nav-link,
+.navbarScroll.navbarDark .navbar-brand {
+    color: antiquewhite;
+}
+
+.card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px; /* Adjust the width as needed */
+}
+.card:hover{
+  transform: scale(1.05);
+  border: 2px solid gold;
+}
+
+.experience-card {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card .card-body {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.experience-card .icon {
+    width: 50px;
+    margin-bottom: 15px;
+    
+}
+
+.experience-card .card-text {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#experience .row {
+    justify-content: center;
+}
+
+#experience .col-12 {
+    flex: 1 0 auto;
+}
+.experience-card:hover{
+    transform: scale(1.05);
+    border:2px solid gold;
+}
+
+#resume {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.resume-card {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.resume-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid gold; /* Green border on hover */
+}
+
+.resume-icon {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.resume-card .card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.resume-card .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-card .btn:hover {
+    background-color: green; /* Change to a darker green on hover */
+}
+#resume-card1{
+    text-align: center;
+}
+
+/* General adjustments */
+.bgimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContent {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-contact-card {
+    border: 2px solid #ddd;
+    transition: transform 0.3s, border-color 0.3s;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.main-contact-card:hover {
+    transform: translateY(-5px);
+    border-color: gold;
+}
+
+.contact-card {
+    border: 2px solid #ddd;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: gold;
+}
+
+.contact-info h4 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media h5 {
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.social-media .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 0 5px;
+}
+#footer {
+    background-color: #808080;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    border-top: 1px solid #ddd;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 3rem;
+    }
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+    .bgimage {
+        height: 50vh; /* Adjust the height for tablets */
+        background-size: contain; /* Ensure the entire image is visible */
+    }
+}
+
