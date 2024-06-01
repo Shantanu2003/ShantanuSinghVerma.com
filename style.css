@@ -40,9 +40,11 @@
 /* services section css */
 /* services section css */
 .servicesText.card {
-    height: 400px;
+    min-height: 300px; /* Set a minimum height for cards */
+    max-height: 100%; /* Allow flexibility */
     cursor: pointer;
     text-align: justify;
+    overflow: hidden; /* Prevent overflow */
 }
 .servicesIcon {
     font-size: 36px;
@@ -56,12 +58,32 @@
 .card-text {
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0; /* Remove bottom margin to prevent overflow */
 }
 .card:hover .servicesIcon {
     color: gold;
 }
 .servicesText:hover {
     border: 2px solid gold;
+}
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 3rem;
+    }
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+    .bgimage {
+        height: 50vh; /* Adjust the height for tablets */
+        background-size: contain; /* Ensure the entire image is visible */
+    }
+    .card-text {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+    }
+    .servicesText.card {
+        padding: 10px; /* Add padding for better spacing */
+    }
 }
 
 /* display background color black on navbar scroll */
@@ -250,16 +272,12 @@
     padding-bottom: 4rem;
 }
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero_title {
-        font-size: 3rem;
+@media (max-width: 576px) {
+    .card-text {
+        font-size: 0.8rem; /* Further reduce font size for extra small screens */
     }
-    .hero_desc {
-        font-size: 1.5rem;
-    }
-    .bgimage {
-        height: 50vh; /* Adjust the height for tablets */
-        background-size: contain; /* Ensure the entire image is visible */
+    .servicesText.card {
+        padding: 8px; /* Adjust padding for extra small screens */
     }
 }
 
