@@ -87,14 +87,32 @@
 }
 
 /* display background color black on navbar scroll */
+.navbarScroll {
+    transition: background-color 0.3s, border 0.3s;
+}
+
+/* Navbar dark style when scrolled */
 .navbarScroll.navbarDark {
     background-color: black;
-    border-bottom:2px solid gold;
+    border-bottom: 2px solid gold;
 }
 .navbarScroll.navbarDark .nav-link,
 .navbarScroll.navbarDark .navbar-brand {
     color: antiquewhite;
 }
+
+/* Styles for the navbar when the menu is opened on small screens */
+.navbar-collapse.show {
+    background-color: black;
+    border-bottom: 4px solid gold;
+}
+
+/* Ensure the background of the expanded menu does not affect the navbar brand */
+.navbar-collapse.show .navbar-brand,
+.navbar-collapse.show .nav-link {
+    color: antiquewhite;
+}
+
 
 .card {
     height: 100%;
