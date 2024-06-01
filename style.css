@@ -104,7 +104,7 @@
 /* Styles for the navbar when the menu is opened on small screens */
 .navbar-collapse.show {
     background-color: black;
-    border-bottom: 4px solid gold;
+    border-bottom: 3px solid gold;
 }
 
 /* Ensure the background of the expanded menu does not affect the navbar brand */
